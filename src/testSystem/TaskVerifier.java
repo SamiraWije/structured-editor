@@ -5,9 +5,9 @@ import geogebra.kernel.Relation;
 import geogebra.main.Application;
 import ru.ipo.structurededitor.model.DSLBean;
 import testSystem.structureBuilder.StructureBuilder;
-import ru.ipo.structurededitor.testLang.comb.*;
+import testSystem.lang.comb.*;
 import testSystem.lang.geom.*;
-import ru.ipo.structurededitor.testLang.logic.*;
+import testSystem.lang.logic.*;
 import ru.ipo.structurededitor.view.editors.ArrayEditor;
 
 import java.util.HashMap;

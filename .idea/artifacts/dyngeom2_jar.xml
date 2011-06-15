@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="dyngeom2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/dyngeom2_jar</output-path>
+    <root id="archive" name="student.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/meta-inf/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="dyngeom2" />
+      <element id="module-output" name="structured-editor" />
+      <element id="library" level="project" name="3D" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/proguard44.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/TableLayout-bin-jdk1.5-2009-08-26.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/laf.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/netscape_javascript.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/p200ant_java5only.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/TableLayoutExtensions-all-jdk1.5-2009-08-26.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/AppleJavaExtensions.jar" path-in-jar="/" />
+      <element id="library" level="project" name="idea_HG1" />
+    </root>
+  </artifact>
+</component>

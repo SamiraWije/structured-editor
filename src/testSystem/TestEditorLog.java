@@ -10,11 +10,11 @@ import ru.ipo.structurededitor.model.DSLBean;
 import ru.ipo.structurededitor.model.DSLBeansRegistry;
 import testSystem.structureBuilder.MyErrorHandler;
 import testSystem.structureSerializer.NodesRegistry;
-import ru.ipo.structurededitor.testLang.comb.*;
-import ru.ipo.structurededitor.testLang.logic.*;
+import testSystem.lang.comb.*;
+import testSystem.lang.logic.*;
 import ru.ipo.structurededitor.view.StatusBar;
 import ru.ipo.structurededitor.view.StructuredEditorModel;
-import ru.ipo.structurededitor.view.images.ImageGetter;
+import testSystem.view.images.ImageGetter;
 
 import javax.swing.*;
 import javax.xml.parsers.DocumentBuilder;

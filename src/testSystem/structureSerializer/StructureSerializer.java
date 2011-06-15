@@ -4,7 +4,7 @@ import geogebra.kernel.GeoElement;
 import org.w3c.dom.*;
 import ru.ipo.structurededitor.model.DSLBean;
 import testSystem.structureBuilder.MyErrorHandler;
-import ru.ipo.structurededitor.testLang.comb.Statement;
+import testSystem.lang.comb.Statement;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;

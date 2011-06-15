@@ -7,12 +7,13 @@ import ru.ipo.structurededitor.StructuredEditor;
 import ru.ipo.structurededitor.controller.ModificationListener;
 import ru.ipo.structurededitor.controller.ModificationVector;
 import ru.ipo.structurededitor.model.DSLBean;
+import ru.ipo.structurededitor.model.DSLBeansRegistry;
 import testSystem.structureBuilder.MyErrorHandler;
 import testSystem.structureSerializer.NodesRegistry;
-import ru.ipo.structurededitor.testLang.comb.*;
+import testSystem.lang.comb.*;
 import ru.ipo.structurededitor.view.StatusBar;
 import ru.ipo.structurededitor.view.StructuredEditorModel;
-import ru.ipo.structurededitor.view.images.ImageGetter;
+import testSystem.view.images.ImageGetter;
 
 import javax.swing.*;
 import javax.xml.parsers.DocumentBuilder;
@@ -428,7 +429,47 @@ public class TestEditorCombStudent {
         //Bean1 bean1 = new Bean1();
         //DSLBeansRegistry reg=new DSLBeansRegistry();
 
-        return new StructuredEditorModel(st);
+        DSLBeansRegistry reg = new DSLBeansRegistry();
+        reg.registerBean(ArrayExpr.class);
+        reg.registerBean(BinExpr.class);
+        reg.registerBean(CountExaminer.class);
+        reg.registerBean(IndexExaminer.class);
+        reg.registerBean(ListExaminer.class);
+        reg.registerBean(AnswerExaminer.class);
+        reg.registerBean(CurElementExpr.class);
+        reg.registerBean(DescartesPower.class);
+        reg.registerBean(EqExpr.class);
+        reg.registerBean(Expr.class);
+        reg.registerBean(IntSegment.class);
+        reg.registerBean(PrjExpr.class);
+        reg.registerBean(Kit.class);
+        reg.registerBean(Statement.class);
+        reg.registerBean(Examiner.class);
+        reg.registerBean(CombKit.class);
+        reg.registerBean(LayoutKit.class);
+        reg.registerBean(EnumKit.class);
+        reg.registerBean(ConstantElement.class);
+        reg.registerBean(InnerConstantElement.class);
+        reg.registerBean(IntConstantElement.class);
+        reg.registerBean(AddExpr.class);
+        reg.registerBean(DiffExpr.class);
+        reg.registerBean(RemExpr.class);
+        reg.registerBean(IntDivExpr.class);
+        reg.registerBean(EvExpr.class);
+        reg.registerBean(NotEvExpr.class);
+        reg.registerBean(LogAndExpr.class);
+        reg.registerBean(LogNotExpr.class);
+        reg.registerBean(LkExpr.class);
+        reg.registerBean(LogOrExpr.class);
+        reg.registerBean(GtExpr.class);
+        reg.registerBean(SlExpr.class);
+        reg.registerBean(ToNumExpr.class);
+        reg.registerBean(CalcExpr.class);
+        reg.registerBean(CalculableExpr.class);
+        reg.registerBean(ModCalculableExpr.class);
+        StructuredEditorModel model = new StructuredEditorModel(st);
+        model.setBeansRegistry(reg);
+        return model;
 
 
     }

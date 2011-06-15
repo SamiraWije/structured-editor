@@ -18,7 +18,7 @@ import testSystem.structureSerializer.NodesRegistry;
 import testSystem.lang.geom.*;
 import ru.ipo.structurededitor.view.StatusBar;
 import ru.ipo.structurededitor.view.StructuredEditorModel;
-import ru.ipo.structurededitor.view.images.ImageGetter;
+import testSystem.view.images.ImageGetter;
 
 import javax.swing.*;
 import javax.xml.parsers.DocumentBuilder;

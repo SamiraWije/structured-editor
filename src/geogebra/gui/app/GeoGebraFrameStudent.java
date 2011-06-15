@@ -23,6 +23,7 @@ import java.awt.dnd.DropTarget;
  * Time: 18:50
  * To change this template use File | Settings | File Templates.
  */
+
 public class GeoGebraFrameStudent extends GeoGebraFrame {
     public static synchronized void main(String[] args) {
         System.out.println("check java version");
@@ -89,8 +90,8 @@ public class GeoGebraFrameStudent extends GeoGebraFrame {
         JPanel taskPanel= new JPanel(new BorderLayout());
 
         StyleContext sc = new StyleContext();
-            final DefaultStyledDocument doc = new DefaultStyledDocument(sc);
-            JTextPane textPane = new JTextPane(doc);
+        final DefaultStyledDocument doc = new DefaultStyledDocument(sc);
+        JTextPane textPane = new JTextPane(doc);
         textPane.setEditable(false);
         final Style heading2Style = sc.addStyle("Heading2", null);
         heading2Style.addAttribute(StyleConstants.Foreground, Color.red);
@@ -104,8 +105,9 @@ public class GeoGebraFrameStudent extends GeoGebraFrame {
 
         try {
             //((GeoStatement)model.getObject()).getTitle()
+            styledDocument.getLength();
             styledDocument.insertString(0,"Химия и физика\n биология\n",null);
-            doc.setParagraphAttributes(0, 1, heading2Style, false);
+            styledDocument.setParagraphAttributes(0, 1, heading2Style, false);
         }catch (Exception e) {
             throw new Error("Text HTML error"+e);
         }
@@ -114,8 +116,8 @@ public class GeoGebraFrameStudent extends GeoGebraFrame {
         textPane.setBorder(border);
         taskPanel.add(textPane, BorderLayout.CENTER);
         JScrollPane structuredEditorScrPane = new JScrollPane(structuredEditor);
-        //wnd.getContentPane().add(taskPanel, BorderLayout.CENTER);
-        wnd.getContentPane().add(structuredEditorScrPane, BorderLayout.CENTER);
+        wnd.getContentPane().add(taskPanel, BorderLayout.CENTER);
+        //wnd.getContentPane().add(structuredEditorScrPane, BorderLayout.CENTER);
         structuredEditor.requestFocusInWindow();
         structuredEditor.setApp(app);
         TestEditorGeom.createBars(wnd, structuredEditor, nodesRegistry);
