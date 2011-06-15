@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="3D">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/3D/jogl.jar!/" />
-      <root url="jar://$PROJECT_DIR$/3D/gluegen-rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/3D/jogl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/3D/gluegen-rt.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

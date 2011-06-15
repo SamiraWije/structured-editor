@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="Idea_HG1:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Idea_HG1_jar</output-path>
-    <root id="archive" name="Idea_HG1.jar">
+  <artifact type="jar" build-on-make="true" name="teacher:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/teacher_jar</output-path>
+    <root id="archive" name="teacher.jar">
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/src/meta-inf/MANIFEST.MF" />
       </element>
