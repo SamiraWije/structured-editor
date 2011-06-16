@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/dyngeom2.iml" filepath="$PROJECT_DIR$/dyngeom2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/structured-editor/editor-example/editor-example.iml" filepath="$PROJECT_DIR$/structured-editor/editor-example/editor-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/editor-example/editor-example.iml" filepath="$PROJECT_DIR$/editor-example/editor-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/structured-editor/structured-editor.iml" filepath="$PROJECT_DIR$/structured-editor/structured-editor.iml" />
     </modules>
