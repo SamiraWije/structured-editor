@@ -1,0 +1,1 @@
+Editor for java beans based domain specific languages. Looks and behaves like usual text editor
